@@ -1,12 +1,49 @@
-.withParticles {
-    background-image: url('elements.svg')
-  }
+body {
+  background-color: #EFF6FF;
+}
 
 h1 {
-color: red;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 
-.container {
-    margin-left: 10%;
-    margin-right: 10%;
+.text-red {
+  color: red;
 }
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#headers {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url('elements.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
