@@ -16,6 +16,10 @@ h1, h2, h3, p {
   color:#374151;
 }
 
+.text-white {
+  color: white;
+}
+
 .text-red {
   color: red;
 }
@@ -39,7 +43,6 @@ h1, h2, h3, p {
 .mt-50 {
   margin-top: 50px;
 }
-
 
 .container {
   margin-left: 10%;
@@ -83,8 +86,12 @@ div.absolute.pos-right-0-top-50 {
   right: 0;
 }
 
-.border-2 {
+.border {
   border: 3px solid black;
+}
+
+.border.border-blue {
+  border-color: blue;
 }
 
 .rounded {
@@ -101,4 +108,8 @@ ul.square {
 
 li {
   font-size: 1.5rem;
+}
+
+.pos-right {
+  float: right;
 }
