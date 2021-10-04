@@ -12,6 +12,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+h1, h2, h3, p {
+  color:#374151;
+}
+
 .text-red {
   color: red;
 }
@@ -22,6 +26,14 @@ h3 {
 
 .text-blue {
   color: blue;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
 }
 
 .mt-50 {
@@ -47,3 +59,46 @@ h3 {
   background-size: 100% auto;
 }
 
+
+div.square-400 {
+  width: 400px;
+  height: 400px;
+}
+
+div.square-200 {
+  width: 200px;
+  height: 200px;
+}
+
+div.relative {
+  position: relative;
+}
+
+div.absolute {
+  position: absolute;
+}
+
+div.absolute.pos-right-0-top-50 {
+  top: 50px; 
+  right: 0;
+}
+
+.border-2 {
+  border: 3px solid black;
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+li {
+  font-size: 1.5rem;
+}
