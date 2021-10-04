@@ -1,0 +1,12 @@
+.withParticles {
+    background-image: url('elements.svg')
+  }
+
+h1 {
+color: red;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}

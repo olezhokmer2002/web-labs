@@ -50,153 +50,26 @@
 
         <div class="mt-16">
             <h1 class="font-bold text-xl text-gray-500">Лабораторна робота №2</h1>
-            <div class="mt-8">
-                <h1 class="font-bold text-3xl text-gray-700">Опис предметного середовища</h1>
-                <h2 class="text-2xl font-bold mt-5 text-gray-700">Сервіс обробки зображень</h2>
-                <ul class="list-inside list-decimal text-lg font-medium text-gray-500 mt-4 ml-6">
-                    <li>Лендинг (промо матеріали, заклик користувача)</li>
-                    <li>Сторінка авторизації </li>
-                    <li>Робоча сторінка користувача (можливість завантажити зображення та обрати налаштування обробки)
-                    </li>
-                    <li>Сторінка завантаження обробленого зображення</li>
-                    <li>Сторінка Support</li>
-                </ul>
-                <p class="text-xl font-bold mt-8 text-gray-700">
-                    Frontend (Next.js, Tailwind), Backend (REST API), Database (Supabase (Postgres)).
-                </p>
-                <p class="text-xl w-2/3 font-medium mt-4 text-gray-500">
-                    Сайт для покращення якості спотворених jpeg зоображень. Спочатку користувач потрапляє на лендинг,
-                    де він може ознайомитися з функціоналом додатку. <br> Перед початком роботи користувач повинен пройти процес
-                    авторизації (за допомогою e-mail або google акаунту), після чого зможе завантажити зображення поганої якості, обрати
-                    налаштування та надіслати зображення на сервер для обробки. Після обробки користувач має змогу
-                    завантажити оброблене зображення підвищеної якості. Також на сайті є сторінки підтримки з відповідями на часто 
-                    виникаючі запитання. При написанні веб-застосунку використовуються новітні хмарні технології: 
-                    CDN Edge Network, NextJS(React), Tailwind, база даних: Postgres(Supabase), веб-застосунок має
-                    кастомний домен з SSL сертифікатом для забезпечення безпечного з'єднання. Backend базується на використанні 
-                    або готового стороннього IPI, або розробці власного. 
-                </p>
-            </div>
 
             <div class="mt-16">
                 <h1 class="font-bold text-3xl text-gray-700">Опис лабораторної роботи</h1>
 
                 <h2 class="mt-5 mb-3 font-bold text-xl text-gray-700">Тема:</h2>
                 <p class="text-lg font-medium text-gray-500">
-                    СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОГО ГАЛУЗІ.
-                    РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ
+                    КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ
                 </p>
 
                 <h2 class="mt-5 mb-3 font-bold text-xl text-gray-700">Мета:</h2>
                 <p class="text-lg font-medium text-gray-500">
-                    Придбати практичні навички роботи з HTML-документом, таблицями,формами, зображеннями, посиланнями.
-                    Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних
-                    робіт.
+                    придбати практичні навички роботи  з селекторами,ідентифікаторами, списками,  різноманітними властивостями кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів
                 </p>
             </div>
 
             <div class="mt-16">
                 <h1 class="font-bold text-3xl text-gray-700">Виконання</h1>
-
-                <h2 class="mt-10 mb-3 font-bold text-xl text-gray-700">Приклад посилання:</h2>
-                <a class="text-lg font-bold text-blue-600" href="https://www.google.com/" target="_blank">Посилання</a>
-
-                <div class="mt-5 text-lg text-gray-700">
-                    <h2 class="mt-5 mb-3 text-xl font-bold">Теорія:</h2>
-                    <p><b>a</b> — creates a hyperlink to web pages, files, email addresses, locations in the same page,
-                        or anything else a URL can address.</p>
-                </div>
-
-                <h2 class="mt-10 mb-3 font-bold text-xl text-gray-700">Приклад таблиці:</h2>
-                <table class="table-auto w-2/3 text-xl text-left">
-                    <thead class="bg-blue-100">
-                        <tr>
-                            <th class="w-1/2">Назва першого стовпця</th>
-                            <th class="w-1/4">Другий</th>
-                            <th class="w-1/4">Третій</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-gray-100">
-                        <tr>
-                            <td>Трохи тексту у першому стовпці</td>
-                            <td>У другому</td>
-                            <td>У третьому</td>
-                        </tr>
-                        <tr>
-                            <td>Трохи тексту у першому стовпці</td>
-                            <td>У другому</td>
-                            <td>У третьому</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="mt-5 text-lg text-gray-700">
-                    <h2 class="mt-5 mb-3 text-xl font-bold">Теорія:</h2>
-                    <p><b>table</b> — represents tabular data — information presented in a two-dimensional table
-                        comprised of rows and columns of cells containing data.</p>
-                    <p><b>thead</b> — defines a set of rows defining the head of the columns of the table.</p>
-                    <p><b>th</b> — defines a cell as header of a group of table cells.</p>
-                    <p><b>tr</b> — defines a row of cells in a table.</p>
-                    <p><b>td</b> — defines a cell of a table that contains data.</p>
-                </div>
-
-                <h2 class="mt-10 mb-3 font-bold text-xl text-gray-700">Приклад списку:</h2>
-                <ul class="list-inside list-decimal text-lg font-medium text-gray-500 mt-4 ml-6">
-                    <li>Рядок</li>
-                    <li>Деякий текст</li>
-                    <li>Ще деякий текст</li>
-                    <li>Якийсь інший текст</li>
-                    <li>Ще текст</li>
-                </ul>
-
-                <div class="mt-5 text-lg text-gray-700">
-                    <h2 class="mt-5 mb-3 text-xl font-bold">Теорія:</h2>
-                    <p><b>ul</b> — represents an unordered list of items, typically rendered as a bulleted list.</p>
-                    <p><b>li</b> — is used to represent an item in a list.</p>
-                </div>
-
-
-                <h2 class="mt-10 mb-3 font-bold text-xl text-gray-700">Приклад форми:</h2>
-                <div class="mt-6 w-1/3">
-                    <form>
-                        <div>
-                            <label class="block text-xs font-medium text-blue-700">Пошта</label>
-                            <input type="email" placeholder="Пошта" required
-                                class="w-full px-4 py-2 mt-2 text-base border-2 border-blue-200 transition duration-500 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-500 focus:outline-none focus:shadow-outline">
-                        </div>
-                        <div class="mt-4">
-                            <label class="block text-xs font-medium text-blue-700">Пароль</label>
-                            <input type="password" placeholder="Пароль" required
-                                class="w-full px-4 py-2 mt-2 text-base border-2 border-blue-200 transition duration-500 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-500 focus:outline-none focus:shadow-outline">
-                        </div>
-                        <button type="submit"
-                            class="block w-full px-4 py-3 mt-6 font-bold text-white transition duration-500 bg-blue-600 rounded-lg hover:bg-blue-500">
-                            Увійти
-                        </button>
-                    </form>
-                </div>
-
-                <div class="mt-5 text-lg text-gray-700">
-                    <h2 class="mt-5 mb-3 text-xl font-bold">Теорія:</h2>
-                    <p><b>ul</b> — represents a document section containing interactive controls for submitting
-                        information.</p>
-                    <p><b>label</b> — represents a caption for an item in a user interface.</p>
-                    <p><b>input</b> — is used to create interactive controls for web-based forms in order to accept data
-                        from the user.</p>
-                </div>
-
-                <h2 class="mt-10 mb-2 font-bold text-xl text-gray-700">Приклад зображення:</h2>
-                <p class="text-lg text-gray-700">На зображенні зображено html-код створених елементів
-                    (без використання стилів)</p>
-
-                <div class="mt-5 text-lg text-gray-700">
-                    <h2 class="mt-5 mb-3 text-xl font-bold">Теорія:</h2>
-                    <p><b>img</b> — inserts an image into the HTML document.</p>
-                </div>
-
-                <img class="w-full mt-5" src="code_lab_1.png">
-
+                <a class="mt-4 text-lg font-bold text-blue-600" href="lab2/lab2_body.html">Посилання на сторінку</a>
             </div>
-        </div>
+
     </div>
 </body>
 
