@@ -1,0 +1,395 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.8/tailwind.min.css">
+  <title>Dmytro Steblyna - Landing page</title>
+</head>
+
+<body class="bg-indigo-50 text-gray-800 px-10 md:px-20 lg:px-32" style="touch-action: pan-x pan-y;">
+  <nav>
+    <div class="flex justify-between py-8 md:py-12">
+      <!-- logo -->
+      <div class="items-center">
+        <img class="h-9 md:h-10 lg:h-11" src="src/logo.svg" />
+      </div>
+      <!-- menu -->
+      <div class="hidden md:flex font-bold items-center text-base xl:text-lg space-x-6 lg:space-x-8 xl:space-x-10">
+        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-500 transition duration-300">Pricing</a>
+        <a href="#" class="text-gray-700 hover:text-gray-500 transition duration-300">About</a>
+        <a href="#contact-us" class="text-white">
+          <div class="rounded-lg py-3 px-10 bg-blue-600 hover:bg-blue-500 transition duration-200 shadow-md">
+            Contact us
+          </div>
+        </a>
+      </div>
+      <!-- mobile hamburger menu-->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu hidden md:hidden text-lg font-bold text-gray-800 pb-20 space-y-2">
+      <a href="#"
+        class="block py-2 px-4 text-blue-600 hover:bg-blue-200 hover:text-blue-500 transition duration-200 rounded-xl">Home</a>
+      <a href="#"
+        class="block py-2 px-4 hover:bg-blue-200 hover:text-gray-800 transition duration-200 rounded-xl">Pricing</a>
+      <a href="#"
+        class="block py-2 px-4 hover:bg-blue-200 hover:text-gray-800 transition duration-200 rounded-xl">About</a>
+      <a href="#contact-us"
+        class="block py-2 px-4 text-white bg-blue-600 hover:bg-blue-500 hover:text-blue-50 transition duration-200 rounded-xl shadow-md">Contact
+        us</a>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="flex flex-col md:flex-row md:justify-between">
+
+      <!-- mobile hero image -->
+      <div class="mt-4 flex justify-around md:hidden">
+        <img class="sm:w-2/3" src="src/rocket.png" />
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div>
+          <h1 class="font-bold mt-5 text-4xl lg:text-5xl xl:text-7xl text-center md:text-left">
+            Skyrocket<br>your business<br><span class="text-blue-600">to the clouds!</span>
+          </h1>
+
+          <p class="mt-6 lg:mt-10 mb-6 text-center md:text-left xl:text-xl text-gray-600">
+            Surface Digital provides end-to-end<br>services to boost your revenue<br>with cutting-edge cloud tech.
+          </p>
+
+          <a href="#expertise"
+            class="text-white text-lg xl:text-xl font-bold block md:flex text-center md:my-8 lg:my-10">
+            <div
+              class="rounded-xl py-3 lg:py-4 px-10 lg:px-14 bg-blue-600 hover:bg-blue-500 transition duration-200 shadow-md">
+              Get started
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop hero image -->
+      <div class="hidden md:flex md:w-1/2 items-center">
+        <div>
+          <img src="src/rocket.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners section -->
+  <section id="partners" class="hidden sm:block mt-20">
+    <h2 class="text-center text-xl text-gray-400">
+      We are trusted by hundreads of companies
+    </h2>
+    <div class="flex justify-around items-center mt-6">
+      <div class="p-4"><img src="src/logos/Airbnb.png" /></div>
+      <div class="p-4"><img src="src/logos/Google.png" /></div>
+      <div class="p-4"><img src="src/logos/Microsoft.png" /></div>
+      <div class="p-4"><img src="src/logos/Walmart.png" /></div>
+      <div class="p-4"><img src="src/logos/Activision.png" /></div>
+    </div>
+  </section>
+
+  <!-- Partners-mobile section -->
+  <section id="partners" class="mt-20 sm:hidden">
+    <h2 class="text-center text-lg text-gray-400">
+      Trusted by
+    </h2>
+    <div class="flex justify-around items-center mt-1">
+      <div class="p-3"><img src="src/logos/Airbnb.png" /></div>
+      <div class="p-3"><img src="src/logos/Google.png" /></div>
+      <div class="p-3"><img src="src/logos/Microsoft.png" /></div>
+    </div>
+    <div class="flex justify-around">
+      <div class="flex justify-around items-center w-3/4">
+        <div class="p-3"><img src="src/logos/Walmart.png" /></div>
+        <div class="p-3"><img src="src/logos/Activision.png" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise section -->
+  <section id="expertise" class="mt-28 flex flex-col items-center bg-no-repeat bg-contain"
+    style="background-image: url(src/elements.svg)">
+
+    <div>
+      <h2 class="font-bold tracking-widest text-blue-600 text-sm mt-5 md:mt-10 md:text-xl text-center">
+        EXPERTISE
+      </h2>
+
+      <h2 class="font-bold text-4xl mt-3 lg:text-5xl text-center">
+        What we are offering
+      </h2>
+
+      <p class="mt-6 md:mt-4 lg:mt-10 mb-14 text-center md:text-lg md:w-auto">
+        Surface Digital provides end-to-end<br class="md:hidden"> services<br class="hidden md:block"> to boost your
+        revenue<br class="md:hidden"> with cutting-edge cloud tech.
+      </p>
+    </div>
+
+    <div class="flex flex-col md:mt-20">
+      <div class="flex flex-col md:flex-row">
+        <div class="flex mb-10">
+          <div class="w-14 md:w-28">
+            <img class="float-right" src="src/icons/Web.png" />
+          </div>
+          <div class="ml-4 md:ml-6">
+            <h2 class="font-semibold text-lg md:text-2xl text-gray-800">Web development</h2>
+            <p class="text-sm md:text-base leading-tight text-gray-600 mt-1 w-56 md:w-72">
+              Client-focused, customer-centric web apps that deliver tangible business results.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex mb-10 md:ml-14">
+          <div class="w-14 md:w-28">
+            <img class="float-right" src="src/icons/Data.png" />
+          </div>
+          <div class="ml-4 md:ml-6">
+            <h2 class="font-semibold text-xl md:text-2xl text-gray-800">Artificial intelligence</h2>
+            <p class="text-sm md:text-base leading-tight text-gray-600 mt-1 w-56 md:w-72">
+              Machine-supported real-time analyses based on big data and artificial intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:mt-8">
+        <div class="flex mb-10">
+          <div class="w-14 md:w-28">
+            <img class="float-right" src="src/icons/Cloud.png" />
+          </div>
+          <div class="ml-4 md:ml-6">
+            <h2 class="font-semibold text-xl md:text-2xl text-gray-800">Cloud consulting</h2>
+            <p class="text-sm md:text-base leading-tight text-gray-600 mt-1 w-56 md:w-72">
+              Comprehensive cloud consulting services and vast experience implementing cloud solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex mb-10 md:ml-14">
+          <div class="w-14 md:w-28">
+            <img class="float-right" src="src/icons/Blockchain.png" />
+          </div>
+          <div class="ml-4 md:ml-6">
+            <h2 class="font-semibold text-xl md:text-2xl text-gray-800">Blockchain</h2>
+            <p class="text-sm md:text-base leading-tight text-gray-600 mt-1 w-56 md:w-72">
+              Blockchain development for automating a variety of<br class="md:hidden"> business processes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- News section -->
+  <section id="news" class="mt-16 lg:px-14 xl:px-28 bg-no-repeat bg-contain"
+    style="background-image: url(src/elements.svg)">
+    <div>
+      <h2 class="font-bold tracking-widest text-blue-600 text-sm mt-5 md:mt-10 md:text-xl text-center">
+        NEWS
+      </h2>
+      <h2 class="font-bold text-4xl mt-3 lg:text-5xl text-center">
+        Last article
+      </h2>
+    </div>
+
+    <!-- Article -->
+    <div name="article1">
+      <a href="https://towardsdatascience.com/data-visualization-in-excel-using-python-94feeacda2fc" target="_blank">
+        <div class="mt-12 flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-lg">
+          <div
+            class="max-w-4xl md:h-full rounded-t-xl md:rounded-none md:rounded-l-xl flex items-center justify-around shadow-md">
+            <img class="h-full object-cover rounded-t-xl md:rounded-none md:rounded-l-xl" src="src/images/art-1.jpg" />
+          </div>
+
+          <div class="md:ml-5">
+            <div class="p-8">
+              <div class="flex justify-between">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 md:w-7 md:h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="w-5 h-5 md:w-7 md:h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="w-5 h-5 md:w-7 md:h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="w-5 h-5 md:w-7 md:h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="w-5 h-5 md:w-7 md:h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="">
+                  <p class="text-gray-600 text-sm md:text-base md:pr-8">3 days ago</p>
+                </div>
+              </div>
+              <h2 class="font-bold leading-tight text-2xl md:text-3xl mt-4">
+                7 Ways to Increase <br class="md:hidden"> Your Income
+              </h2>
+              <p class="text-base md:text-lg text-gray-600 mt-2 md:my-4 md:pr-10">
+                Surface Digital provides end-to-end services to boost your revenue with to-end services to boost your
+                cutting-edge cloud tech.
+              </p>
+              <div class="mt-6 -mb-2 md:mb-4 md:mt-10">
+                <a href="https://towardsdatascience.com/data-visualization-in-excel-using-python-94feeacda2fc"
+                  target="_blank"
+                  class="font-bold text-xl text-center block md:inline py-3 md:px-12 md:py-3 text-white bg-blue-600 hover:bg-blue-500 hover:text-blue-50 transition duration-200 rounded-xl shadow-lg">Read
+                  now</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Read more link -->
+    <div class="my-6 lg:my-10 text-center">
+      <a href="https://medium.com/" target="_blank"
+        class="text-base md:text-lg font-bold text-blue-600 hover:text-blue-800 transition duration-300">Read more ></a>
+    </div>
+  </section>
+
+  <!-- Contact us -->
+  <section id="contact-us" class="mt-24 bg-no-repeat bg-contain flex flex-col items-center justify-center"
+    style="background-image: url(src/elements.svg)">
+
+    <div>
+      <h2 class="font-bold tracking-widest text-blue-600 text-sm mt-5 md:mt-10 md:text-xl text-center">
+        CONNECTION
+      </h2>
+      <h2 class="font-bold text-4xl mt-3 lg:text-5xl text-center">
+        Contact us
+      </h2>
+    </div>
+
+    <div class="bg-gray-50 w-full mt-16 md:w-2/3 px-7 md:px-10 pt-7 md:pt-10 pb-5 shadow-lg rounded-xl">
+
+      <h1 class="text-2xl font-bold mb-4" id="title">Fill out the form</h1>
+      <p id="description" class="mb-4">Short description is here!</p>
+
+      <form class="space-y-5" id="survey-form">
+        <label class="block font-bold" for="name" id="name-label">Username:</label>
+        <input class="w-full border-2 border-gray-400 outline-none focus:border-blue-400 p-3 rounded-lg" type="text"
+          id="name" placeholder="Your username" required>
+
+        <label class="block font-bold" for="email" id="email-label">Mail:</label>
+        <input class="w-full border-2 border-gray-400 outline-none focus:border-blue-400 p-3 rounded-lg" type="email"
+          id="email" placeholder="username@domain.com" required>
+
+        <label class="block font-bold" for="number" id="number-label">Age:</label>
+        <input class="border-2 border-gray-400 outline-none focus:border-blue-400 p-3 rounded-lg" type="number"
+          id="number" min="16" max="150" placeholder="16" required>
+
+        <label class="block font-bold" for="dropdown">Choose an option:</label>
+        <select class="w-full border-2 border-gray-400 outline-none focus:border-blue-400 p-3 rounded-lg" id="dropdown">
+          <option value="best">The best</option>
+          <option value="cool">Cool</option>
+          <option value="ok">OK</option>
+          <option value="bad">Bad</option>
+        </select>
+
+        <label class="block font-bold">Choose some options:</label>
+        <div class="flex space-x-5 font-bold">
+          <div>
+            <input class="" type="radio" id="choice1" name="group1" value="choice-1">
+            <label for="choice1">One</label>
+          </div>
+
+          <div>
+            <input class="" type="radio" id="choice2" name="group1" value="choice-2">
+            <label for="choice2">Two</label>
+          </div>
+
+          <div>
+            <input class="" type="radio" id="choice3" name="group1" value="choice-3">
+            <label for="choice3">Three</label>
+          </div>
+        </div>
+        <div class="flex space-x-5 mb-2 font-bold">
+          <div>
+            <input class="" type="radio" id="true" name="group2" value="true">
+            <label for="true">True</label>
+          </div>
+
+          <div>
+            <input class="" type="radio" id="false" name="group2" value="false">
+            <label for="false">False</label>
+          </div>
+        </div>
+
+        <label class="block font-bold">Choose an option:</label>
+        <div class="flex space-x-5 mb-2 font-bold">
+          <div>
+            <input type="checkbox" id="opt-1" value="opt-1">
+            <label for="opt-1" class="mx-1 my-text-gray-700">Opt1</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="opt-2" value="opt-2">
+            <label for="opt-2" class="mx-1 my-text-gray-700">Opt2</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="opt-3" value="opt-3">
+            <label for="opt-3" class="mx-1 my-text-gray-700">Opt3</label>
+          </div>
+        </div>
+
+        <textarea id="message"
+          class="w-full border-2 border-gray-400 outline-none focus:border-blue-400 p-3 rounded-lg"></textarea>
+        <div class="">
+          <input type="checkbox" id="validation" value="validation-true">
+          <label for="validation" class="ml-2 my-text-gray-700">I have read the terms</label>
+        </div>
+        <input
+          class="font-bold w-full text-lg text-center block md:inline py-3 md:px-10 md:py-3 text-white bg-blue-600 hover:bg-blue-500 hover:text-blue-50 transition duration-200 rounded-xl shadow-md"
+          type="submit">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer" class="my-16 title-font font-medium">
+    <h2 class="text-xl text-center text-gray-900">
+      Brygada 7 Incorporated
+    </h2>
+
+  </div>
+
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>
