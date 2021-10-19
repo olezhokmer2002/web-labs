@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<style>
+    
+
+    body{
+        font-family: Arial;
+    }
+
+    h1 {
+        font-size: 25px;
+        color: deepskyblue;
+        font-family: Arial;
+        margin-left: 10px;
+        white-space: nowrap;
+        float: left;
+        margin-top: 30px;
+    }
+
+    img.fig {
+        float: left; 
+         
+        padding-top: 1%;
+    }
+
+    .first {
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first div {
+            
+    }
+
+    .flex {
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        height: 70%;
+        margin: 10px;
+    }
+
+    .flex div {
+        width: 10%;
+        padding-left: 2%;
+        background-color: rgb(238, 238, 238);
+        font-size: 16px;
+        border: 1px #ccc solid;
+        background-color:deepskyblue;
+        color:white;
+    }
+
+    .forms {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;    
+        background-color: rgb(238, 238, 238);
+    }
+
+    .forms div {
+        border: 1px #ccc solid;
+        margin: 1%;
+    }
+
+    .form1{
+        flex:1;
+        order: 1;
+        background-color: deepskyblue;
+        padding: 20px;
+    }
+
+    .form2 {
+        flex:1;
+        order: 2;
+        background-color: orange;
+        padding: 20px;
+    }
+
+    .form3 {
+        background-color: indianred;
+        padding: 20px;
+        flex:1;
+        order: 3;
+    }
+
+    .whiteText {
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        font-family: Arial;
+        color: white;
+    }
+
+    .boxes {
+        margin-top: 15%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boxes div {
+        border: 1px #ccc solid;
+        text-align: left;
+        padding-left: 2%;
+        background-color: rgb(238, 238, 238);
+        font-size: 16px;
+    }
+
+
+</style>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>task03 Dima Kubai IS-01</title>
+
+    <div class="first">
+        <div>
+            <img style="padding-left: 1%" class="fig" src="ITsign.png" alt="IT sing of company">
+            <h1>Навчальний центр навчання - IT</h1>
+            <p style="text-align:right;
+            margin-right: 1%; font-size: 20px;
+            color:darkblue; font-weight:bold;
+            white-space: nowrap; float: right;
+            margin-top: 30px"> Ми працюємо з Пн-Пт з 10:00 до 19:00 Сб-Нд:Вихідний.</p>
+        </div>
+        <div class="flex">
+            <div>
+                <p>Головна</p>
+            </div>
+            <div>
+                <p>Акції</p>
+            </div>
+            <div>
+                <p>Курси</p>
+            </div>
+            <div>
+                <p>Про центр</p>
+            </div>
+            <div>
+                <p>Контакти</p>
+            </div>
+            <div>
+                <p>ціни</p>
+            </div>
+            <div>
+                <p>Блог</p>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="forms">
+        <div class="form1">
+            <p><span class="whiteText">Курси інтежної графіки</span></p>
+            <p><span class="whiteText">Курси комп'ютерного моделювання</span></p>
+            <p><span class="whiteText">Курси програмування</span></p>
+            <p><span class="whiteText">Курси бухгалтерів</span></p>
+            <p><span class="whiteText">Курси системного адміністрування</span></p>
+            <p><span class="whiteText">Комп'ютер для початківців</span></p>
+            <p><span class="whiteText">Курси створення сайтів</span></p>
+            <p><span class="whiteText">Просування web сайтів (SEO)</span></p>
+            <p><span class="whiteText">Курси менеджерів</span></p>
+            <p><span class="whiteText">Курси графіки</span></p>
+            <p><span class="whiteText">Створення сайту</span></p>
+            <p><span class="whiteText">Курси дизайну</span></p>
+        </div>
+        <div class="form2">
+            <p>Нова форма навчання.</p>
+            <p>Вибір будь - якого часу курсу.</p>
+            <p>Проведення занять безпосередньо у слухача <b>на дому або в офісі</b>.</p>
+            <p>Навчання за індивідуальною програмою.</p>
+            <p>Ви вчите тільки те, що потрібно. Програма підбирається під вас!</p>
+            <p>Безкоштовна установка ПО на ваш ноутбук чи комп'ютер.</p>
+            <p>Викладач встановить, а також налаштує потрібну програму для виконання 
+            домашнього завдання.</p>
+        </div>
+        <div class="form3">
+            <p style="color: rgba(255,255,255,0.8);
+            font-weight: bold;
+            font-size: 16px;">
+            Знайти курс по інтересам</p>
+
+            <p style="        
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;">
+            Скористайтеся пошуком, 
+            щоб знайти потрібний вам курс або подивіться 
+            <a style="color: rgba(255,255,255,0.8)" href="http:google.com">всі курси</a></p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; font-weight: bold; margin-top: 5%">Курси web-програмування в Києві.<h2>
+    <img style=" margin: 0 7px 7px 0;"class="fig" src="webSing.png" alt="web" />
+    <p align="justify" style="
+        font-size: 18px;
+        padding-top: 1%;
+        font-weight: 100;
+        word-spacing: 8px;
+        ">
+        Ми шукаємо всіх тих, кому цікавий світ
+        програмування! Хочете займатися розробкою програмного забезпечення і побудовою web-сайтів?
+        А може, Ви вже робите все це і жадаєте додаткових знань або вирішили підвищити свою
+        кваліфікацію? Не біда, якщо ніколи і не пробували себе в подібному - команда IT готова на
+        давати свої послуги людям будь-якого рівня знань. Якщо наші клієнти новачки, то ми почнемо
+        заняття з основ, а якщо ж просунуті користувачі, то вони починатимуть навчання з більш
+        складного матеріалу, при цьому, не зупиняючить на тому, що їм давно відомо. Теми для
+        проведення занять дозволено вибирати на свій розсуд.
+    </p>
+
+    <div class="boxes">
+        <div style="width:  18%">
+            <p>Ми на мапі</p>
+        </div>
+        <div style="width: 18%">
+            <p>Зв'язок з нами</p>
+        </div>
+        <div style="width: 18%">
+            <p>Корисні посилання</p>
+        </div>
+        <div style="width: 18%">
+            <p>Популярне на блозі</p>
+        </div>
+    </div>
+
+</body>
+</html>
