@@ -1,0 +1,52 @@
+<title>Lab2-2-Servetnik</title>
+<style>
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left center right"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 25% 1fr 25%;
+  grid-gap: 5px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer {
+  border: 2px solid black;
+  padding: 10px;
+  background: gold;
+}
+left, right {
+    padding: 10px;
+    background: dodgerblue;
+}
+center {
+    border: 2px solid black;
+    padding: 10px;
+    background: white;
+}
+
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainCenter {
+  grid-area: center;
+  }
+#mainLeft {
+  grid-area: left;
+  }
+#siteRight {
+  grid-area: right;
+  }
+</style>
+<body>
+  <header id="pageHeader">Header</header>
+  <center id="mainCenter">Center</center>
+  <left id="mainLeft">Left</left>
+  <right id="siteRight">Right</right>
+  <footer id="pageFooter">Footer</footer>
+</body>
